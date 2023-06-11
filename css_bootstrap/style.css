@@ -1,0 +1,72 @@
+body {
+  padding-top: 75px;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+              0 4px 8px 0 rgba(0,0,0,.05);
+}
+
+#home-quote {
+  background: url('../img/bg-quote.jpg') center center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  #home-quote .display-4{
+    font-size: 2.5rem;
+  }
+  body {
+    padding-top: 0px;
+  }
+  .fixed-top {
+    position: relative;
+  }
+}
+
+
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #2a416e;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+@media (min-width: 767px) {
+  .card img {
+    height: 11em;
+  }
+}
+.nav-item  > li , a
+{
+  display: inline-flex;
+  flex-wrap:wrap;
+}

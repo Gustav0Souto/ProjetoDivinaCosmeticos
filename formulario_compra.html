@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Divina</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css_bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css_bootstrap/style.css">
+    <link rel="shortcut icon" href="./imgs/favicon-divina.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!--  Modal   -->
+
+    <!-- Fecha Modal  -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+        <a href="./index.html" class="navbar-brand">
+            <img src="./imgs/logo-marca-titulo.png" alt="Logo da empresa" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex pl-5 m-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Procure seu produto..."
+                    aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">
+                    Procurar
+                </button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <h5 class="dropdown-item bg-">Woman</h5>
+                        <a class="dropdown-item" href="./unha.html">Unha</a>
+                        <a class="dropdown-item" href="./cabelo.html">Cabelos</a>
+                        <a class="dropdown-item" href="./pele.html">Pele</a>
+                        <a class="dropdown-item" href="./maquiagem.html">Maquiagem</a>
+                        <hr />
+                        <h5 class="dropdown-item bg-">Man</h5>
+                        <a class="dropdown-item" href="./barba_bigode.html">Barba & Bigode</a>
+                        <a class="dropdown-item" href="./locao.html">Loções</a>
+                        <a class="dropdown-item" href="./barbearia.html">Barbearia</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./conta.html">Minha Conta</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./clube_assinaturas.html">Clube de Assinaturas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sobre_nos.html">Sobre Nós</a>
+                </li>
+                <div style="display: flex;gap: 13px;">
+
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ml-md-2 "
+                            href="./login_usuario/login_usuario.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ml-md-2 flex-nowrap" href="./form_cadastro/form_cadastro.html"
+                            name="register">Cadastre-se</a>
+                </div>
+                </li>
+            </ul>
+            <!--
+        <form class="d-flex pl-5 m-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Procure seu produto..."
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Procurar
+          </button>
+        </form>
+      -->
+
+        </div>
+    </nav>
+
+    <section class="container py-4">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">FINALIZE AGORA A COMPRA DO SEU</span>
+            <h1 class="display-4 text-primary">PRODUTO.</h1>
+        </div>
+        <div class="row">
+            <form class="col-lg-6 was-validated" action="" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Nome completo" required>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCPF">CPF</label>
+                        <input type="text" class="form-control" id="inputCPF" placeholder="xxx.xxx.xxx-xx" required>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Seu email" required>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, preencha este campo com um email válido.</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSenha">Senha</label>
+                        <input type="password" class="form-control" id="inputSenha" placeholder="Senha de acesso"
+                            required>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="inputEndereco">Endereço</label>
+                        <input type="text" class="form-control" id="inputEndereco"
+                            placeholder="Número, nome da rua e bairro." required>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCidade">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" required>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="inputEstado">Estado</label>
+                        <select id="inputEstado" class="form-control" required>
+                            <option>Rio de Janeiro</option>
+                            <option>Pernambuco</option>
+                            <option>São Paulo</option>
+                            <option>Paraná</option>
+                            <option>Ceará</option>
+                            <option>Acre</option>
+                        </select>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, selecione um estado.</div>
+                    </div>
+                    <div class="form-group col-md-3 col-6">
+                        <label for="inputCep">Cep</label>
+                        <input type="text" class="form-control" id="inputCep" placeholder="xxxxx-xxx" required>
+                        <div class="valid-feedback">Campo preenchido.</div>
+                        <div class="invalid-feedback">Por favor, preencha este campo com um CEP válido.</div>
+                    </div>
+                </div>
+                <div class="bg-light rounded box-shadow p-3 form-group">
+                    <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+                    <nav class="nav btn-group mb-3" id="formaPagamento" role="tablist">
+                        <button type="button" class="btn btn-secondary active btn-sm" id="nav-cartao-tab"
+                            data-toggle="tab" href="#nav-cartao" role="tab" aria-controls="nav-cartao"
+                            aria-selected="true">Cartão de Crédito</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="nav-boleto-tab" data-toggle="tab"
+                            href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto
+                            Bancário</button>
+                    </nav>
+                    <div class="tab-content" id="formaPagamentoConteudo">
+                        <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel"
+                            aria-labelledby="nav-cartao-tab">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputNomeCartao">Nome no Cartão</label>
+                                    <input type="text" class="form-control" id="inputNomeCartao"
+                                        placeholder="Nome impresso no cartão" required>
+                                    <div class="valid-feedback">Campo preenchido.</div>
+                                    <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="inputMes">Mês</label>
+                                    <select id="inputMes" class="form-control" required>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    <div class="valid-feedback">Campo preenchido.</div>
+                                    <div class="invalid-feedback">Por favor, selecione o mês de expiração.</div>
+                                </div>
+                                <div class="form-group col-md-3 col-6">
+                                    <label for="inputAno">Ano</label>
+                                    <select id="inputAno" class="form-control" required>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                    </select>
+                                    <div class="valid-feedback">Campo preenchido.</div>
+                                    <div class="invalid-feedback">Por favor, selecione o ano de expiração.</div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputNumeroCartao">Número do Cartão</label>
+                                    <input type="text" class="form-control" id="inputNumeroCartao"
+                                        placeholder="5555 5555 5555 5555" required>
+                                    <div class="valid-feedback">Campo preenchido.</div>
+                                    <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputCodigo">Código de Segurança</label>
+                                    <input type="text" class="form-control" id="inputCodigo" placeholder="XXX" required>
+                                    <div class="valid-feedback">Campo preenchido.</div>
+                                    <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+                            <p class="lead">Clique em comprar que enviaremos um boleto para o seu e-mail.</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn bg-success btn-lg text-white" id="submitBtn" disabled>Comprar</button>
+                <button type="button" class="btn btn-lg text-white"><a href="./index.html">Continuar
+                        Comprando</a></button>
+            </form>
+
+
+            <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+                <h2 class="h6 text-primary">PRODUTO ESCOLHIDO</h2>
+                <div class="bg-light rounded p-4 box-shadow">
+                    <div class="container p-3">
+                        <div class="card">
+                            <img src="./imgs/imgs_produtos/imagem-foto-produto.png" class="card-img-top"
+                                alt="Produto" />
+                            <div class="card-body">
+                                <h5 class="card-title">Produto</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Integer interdum odio in felis mattis feugiat. In rhoncus
+                                    libero magna, ultricies condimentum tortor tempor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <select class="form-control bg-light" id="inputCidades">
+                                <option selected disabled>Selecione a quantidades de itens</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <span class="h4 text-primary">R$5.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="./unha.html">Unha</a></li>
+                        <li><a href="./cabelo.html">Cabelo</a></li>
+                        <li><a href="./pele.html">Pele</a></li>
+                        <li><a href="./maquiagem.html">Maquiagem</a></li>
+                        <li><a href="./barba_bigode.html">Barba & Bigode</a></li>
+                        <li><a href="./locao.html">Loções</a></li>
+                        <li><a href="./barbearia.html">Barbearia</a></li>
+                        <li><a href="./sobre_nos.html">Sobre Nós</a></li>
+                        <li><a href="./form_cadastro/form_cadastro.html">Cadastre-se</a></li>
+                        <li><a href="./login_admin/login_admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LOCAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://pt.wikipedia.org/wiki/Surubim" target="_blank">Surubim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>81 98116-4406</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                                href="https://www.facebook.com/divinasurubim/" style="max-width: 140px"
+                                target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline-secondary btn-sm btn-block mb-2"
+                                href="https://www.instagram.com/divina.cosmeticos/" style="max-width: 140px"
+                                target="_blank">Instragram</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="wa.me/5581981164406"
+                                style="max-width: 140px" target="_blank">Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">Divina © 2023. Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js_bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js_bootstrap/popper.min.js"></script>
+    <script type="text/javascript" src="./js_bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="./js_bootstrap/app.js"></script>
+
+    <script>
+        // Obtém todos os campos do formulário
+        const formFields = document.querySelectorAll('form input, form select');
+
+        // Adiciona um ouvinte de evento para cada campo
+        formFields.forEach(field => {
+            field.addEventListener('input', validateForm);
+        });
+
+        // Função para validar o formulário
+        function validateForm() {
+            let isValid = true;
+
+            // Verifica se todos os campos estão preenchidos corretamente
+            formFields.forEach(field => {
+                if (!field.checkValidity()) {
+                    isValid = false;
+                }
+            });
+
+            // Ativa ou desativa o botão com base na validação
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = !isValid;
+        }
+    </script>
+</body>
+
+</html>
